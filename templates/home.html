@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<style>
+form {
+    margin: auto;
+    width: 35%;
+}
+
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+
+<head>
+    <title>Rolling method prediction</title>
+</head>
+<form action="{{ url_for('home') }}" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+        C%:
+        <input name="c" type="text" required>
+        <br>
+        <br> CE%:
+        <input name="ce" type="text" required>
+        <br>
+        <br> S%:
+        <input name="s" type="text" required>
+        <br>
+        
+		<br> P%:
+        <input name="p" type="text" required>
+        <br>
+        
+		<br> YIELD STRENGHT:
+        <input name="ys" type="text" required>
+        <br>
+        
+		<br> ELONGATION:
+        <input name="el" type="text" required>
+        <br>
+        <br>
+        <input type="submit" value='predict!' >
+    </fieldset>
+</form>
+<br>
+
+
+</html>
